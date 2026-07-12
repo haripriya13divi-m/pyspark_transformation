@@ -4,6 +4,7 @@ from pyspark.sql.functions import  col, lit
 from pyspark.sql.types import *
 
 df = spark.read.csv("/Workspace/Users/haripriya13divi@gmail.com/Employee.csv",header = True, inferSchema = True)
+#claendata
 df_clean = df.fillna("India",["city"]) \
              .fillna(10000,["salary"]) \
              .fillna(0,["experience"])
