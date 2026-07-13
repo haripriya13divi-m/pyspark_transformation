@@ -5,7 +5,7 @@ spark = SparkSession.builder.appName("Spark DataFrames").getOrCreate()
 df = spark.read.csv("/Workspace/Users/haripriya13divi@gmail.com/Employee.csv", header=True, inferSchema=True)
 df.select("name","city").show()
 
-
+ 
 
 # COMMAND ----------
 
