@@ -1,0 +1,5 @@
+Select 
+max(salary) 
+from emp 
+where Max(salary) 
+< (select max(salary) from emp)
