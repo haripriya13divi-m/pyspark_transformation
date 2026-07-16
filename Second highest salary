@@ -3,7 +3,7 @@
 Select 
 max(salary) 
 from emp 
-where Max(salary) 
+where salary 
 < (select max(salary) from emp)
 
 #windows function 
