@@ -9,6 +9,7 @@ where salary
 #windows function 
 #nth highest salary 
 select name, salary from (select 
-name, salary 
-dense_rank() over ( order by salary ) as high_sal) t
+name, salary ,
+dense_rank() over ( order by salary ) as high_sal
+from emp) t
 where high_sal = 2
